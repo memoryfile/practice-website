@@ -1,0 +1,33 @@
+.footer {
+    height: 72px;
+    background: #eee;
+    color: darkmagenta;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* .header-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+} */
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 16px;
+}
