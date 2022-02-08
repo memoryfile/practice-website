@@ -13,6 +13,7 @@
     min-width: 300px;
     color:blanchedalmond;
     padding-left: 50px;
+    padding-top: 50px;
 }
 
 .logo {
@@ -44,15 +45,23 @@ button {
 
 .box1 {
     background: #1F2937;
-    display: inline-flex;
 }
 
 .box1button {
-    display: flex;
-    align-items: flex-start;
     padding-left: 50px;
     /* margin-top: 30px; */
     size: 200px;
+}
+
+.header-subtext {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+}
+.img {
+    display: flex;
+    flex-wrap: nowrap;
+    /* align-self: flex-end; */
 }
 
 .box2-header {
