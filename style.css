@@ -27,6 +27,11 @@
     font-size: 18px;
 }
 
+/* .box1-container .img {
+    display: flex;
+    align-items: flex-start;
+} */
+
 a {
     text-decoration: none;
     color: gray;
@@ -78,37 +83,63 @@ button {
     background: #E5E7EB;
 }
 
-.quote {
+.quote, .author {
     display: flex;
-    padding-top: 40px;
     justify-content: center;
-    align-items: center;
+}
+
+.quote {
+    padding-top: 40px;
     font-size: 36px;
     font-weight: lighter;
     color: #1F2937;
     max-width: 1000px;
-    padding-left: 500px;
     padding-bottom: 40px;
 }
 
 .author {
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     padding-bottom: 40px;
 }
 
 .pics {
-    /* need to figure out to center pictures */
+    /* need to figure out to center pictures according to the text */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    flex-shrink: -1; 
+    flex-shrink: 1; 
     /* how do i use flex shrink? */
 }
 .img1 {
     display: flex;
     padding-left: 500px;
+    padding-bottom: 200px;
+}
+
+.box4 {
+    background: #3882F6;
+    max-width: 100em;
+    max-height: 10em;
+    display: flex;
+}
+
+.box4-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box4-header {
+    color: #E5E7EB;
+    font-size: 32px;
+    font-weight: 600;
+    padding-top: 30px;
+}
+
+.box4-subtext {
+    padding-bottom: 30px;
 }
 
 ul {
