@@ -7,6 +7,8 @@
     align-items: center;
 }
 
+/* Box 0 - Header */
+
 .header {
     font-size: 48px;
     font-weight: 900;
@@ -14,27 +16,6 @@
     color:blanchedalmond;
     padding-left: 50px;
     padding-top: 50px;
-}
-
-.logo {
-    padding-left: 40px;
-    padding-top: 40px;
-}
-.header-subtext {
-    display: flex;
-    padding-left: 50px;
-    color: #E5E7EB;
-    font-size: 18px;
-}
-
-/* .box1-container .img {
-    display: flex;
-    align-items: flex-start;
-} */
-
-a {
-    text-decoration: none;
-    color: gray;
 }
 
 button {
@@ -57,8 +38,43 @@ button {
     padding-top: 40px;
 }
 
+.header-subtext {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+}
+
+.img {
+    display: flex;
+    flex-wrap: nowrap;
+    /* align-self: flex-end; */
+}
+
+.logo {
+    padding-left: 40px;
+    padding-top: 40px;
+}
+.header-subtext {
+    display: flex;
+    padding-left: 50px;
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+/* Box 1 - 'My awesome website' section, with large picture */
+
 .box1 {
     background: #1F2937;
+    padding-top: 100px;
+}
+
+.box1-item-text {
+    margin: auto;
+}
+
+.box1-container {
+    display: flex;
+    justify-content: space-around;
 }
 
 .box1button {
@@ -67,15 +83,15 @@ button {
     size: 200px;
 }
 
-.header-subtext {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 400px;
+.img1 {
+    /* display: flex; */
+    padding-right: 200px;
+    padding-bottom: 200px;
 }
-.img {
-    display: flex;
-    flex-wrap: nowrap;
-    /* align-self: flex-end; */
+
+a {
+    text-decoration: none;
+    color: gray;
 }
 
 .box2-header {
@@ -102,6 +118,7 @@ button {
     color: #1F2937;
     max-width: 1000px;
     padding-bottom: 40px;
+    padding-left: 40px;
 }
 
 .author {
@@ -117,26 +134,31 @@ button {
     flex-shrink: 1; 
     /* how do i use flex shrink? */
 }
-.img1 {
-    display: flex;
-    padding-left: 500px;
-    padding-bottom: 200px;
-}
 
 .box4 {
+    background: white;
+    display: flex;
+    width: 600px;
+    height: 400px;
+}
+.realbox4 {
+    width: 800px;
+    height: 200px;
     background: #3882F6;
-    /* max-width: 100em;
-    max-height: 10em;
-    display: flex; */
+    margin: auto;
+    border-radius: 1em;
+    align-items: center;
+    justify-content: center;
 }
 
 .box4-container {
-    display: flex;
+    color: #E5E7EB;
+    flex-direction: column;
     align-items: center;
+    /* justify-content: space-evenly; */
 }
 
 .box4-header {
-    color: #E5E7EB;
     font-size: 32px;
     font-weight: 600;
     padding-top: 30px;
