@@ -1,3 +1,21 @@
+/* html, body {
+  height: 100%;
+} */
+
+/* Fix white space on margins error */
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+#background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0px 0 0 0;
+}
+
 .footer {
   height: 72px;
   background: #eee;
@@ -78,6 +96,8 @@ button {
 .box1-container {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 200px;
+  padding-right: 200px;
 }
 
 .box1button {
@@ -87,15 +107,18 @@ button {
 }
 
 .img1 {
-  /* display: flex; */
-  padding-right: 200px;
-  padding-bottom: 200px;
+  flex-wrap: wrap;
+  max-width: fit-content;
+  max-height: fit-content;
+  padding: 50px;
 }
 
 a {
   text-decoration: none;
   color: gray;
 }
+
+/* Box 2 */
 
 .box2-header {
   font-size: 32px;
@@ -105,6 +128,11 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.pics {
+  justify-content: space-between;
+  align-items: center;
 }
 
 .box3 {
