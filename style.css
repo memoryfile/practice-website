@@ -7,24 +7,16 @@
 body {
   margin: 0px;
   padding: 0px;
-  font-family:Arial, Helvetica, sans-serif
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-#background {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  margin: 0px 0 0 0;
+/* ul {
+  list-style: none;
 }
 
-.footer {
-  height: 72px;
-  background: #eee;
-  color: darkmagenta;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+li {
+  padding: 16px;
+} */
 
 /* Box 0 - Header */
 
@@ -32,15 +24,18 @@ body {
   font-size: 48px;
   font-weight: 900;
   min-width: 300px;
-  color: blanchedalmond;
+  color: white;
   padding-left: 50px;
   padding-top: 50px;
 }
 
 button {
-  background: #3882f6;
   color: white;
+  background-color: #3882f6;
   font-weight: 700;
+  min-width: 150px;
+  min-height: 40px;
+  border-radius: 1em;
 }
 
 .box0,
@@ -54,10 +49,12 @@ button {
 }
 
 .box0-links {
-  align-items: flex-start;
-  justify-content: space-around;
+  /* align-items: flex-start;
+  justify-content: space-around; */
   padding-right: 40px;
   padding-top: 40px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header-subtext {
@@ -109,9 +106,10 @@ button {
 }
 
 .img1 {
+  display: flex;
   flex-wrap: wrap;
-  max-width: fit-content;
-  max-height: fit-content;
+  /* max-width: 100%;
+  height: auto; */
   padding-left: 50px;
 }
 
@@ -130,11 +128,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.pics {
-  justify-content: space-between;
-  align-items: center;
 }
 
 .box3 {
@@ -163,9 +156,23 @@ a {
   /* need to figure out to center pictures according to the text */
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  flex-wrap: wrap;
+  /* unsure how to properly shrink images for mobile, but I don't need to know that for now */
   flex-shrink: 1;
-  /* how do i use flex shrink? */
+  /* Center descriptions */
+  text-align: center;
+}
+
+.pic-1 {
+  max-width: 160px;
+}
+
+.pic-2 {
+  max-width: 150px;
+}
+
+.pic-3 {
+  max-width: 150px;
 }
 
 .box4 {
@@ -180,7 +187,7 @@ a {
   height: 150px;
   background: #3882f6;
   margin: auto;
-  border-radius: 1em;
+  border-radius: 0.5em;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -191,7 +198,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: space-evenly; */
 }
 
 .box4-header {
@@ -204,10 +210,13 @@ a {
   padding-bottom: 30px;
 }
 
-ul {
-  list-style: none;
-}
+/* Footer */
 
-li {
-  padding: 16px;
+.footer {
+  height: 72px;
+  background: #eee;
+  color: darkmagenta;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
