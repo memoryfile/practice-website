@@ -6,19 +6,51 @@
 
 body {
   margin: 0px;
-  padding: 0px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ul {
-  list-style: none;
+a {
+  text-decoration: none;
+  color: #eaedf3;
+  margin: 4px;
 }
 
-li {
-  padding: 16px;
-} */
+button {
+  color: white;
+  background-color: #3882f6;
+  font-weight: 900;
+  min-width: 150px;
+  min-height: 40px;
+  border-radius: 1em;
+}
 
 /* Box 0 - Header */
+
+.box0,
+.box0-container {
+  display: flex;
+}
+
+.box0 {
+  justify-content: space-between;
+  background: #1f2937;
+}
+
+.box0-container {
+  padding-right: 40px;
+  align-items: center;
+}
+
+.img {
+  max-width: fit-content;
+}
+
+.logo {
+  padding-left: 40px;
+  padding-top: 40px;
+}
+
+/* Box 1 - 'My awesome website' section, with large picture */
 
 .header {
   font-size: 48px;
@@ -29,59 +61,14 @@ li {
   padding-top: 50px;
 }
 
-button {
-  color: white;
-  background-color: #3882f6;
-  font-weight: 700;
-  min-width: 150px;
-  min-height: 40px;
-  border-radius: 1em;
-}
-
-.box0,
-.box0-links {
-  display: flex;
-}
-
-.box0 {
-  justify-content: space-between;
-  background: #1f2937;
-}
-
-.box0-links {
-  /* align-items: flex-start;
-  justify-content: space-around; */
-  padding-right: 40px;
-  padding-top: 40px;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .header-subtext {
   display: flex;
   flex-wrap: wrap;
   max-width: 400px;
-}
-
-.img {
-  display: flex;
-  flex-wrap: nowrap;
-  /* align-self: flex-end; */
-}
-
-.logo {
-  padding-left: 40px;
-  padding-top: 40px;
-}
-
-.header-subtext {
-  display: flex;
   padding-left: 50px;
   color: #e5e7eb;
   font-size: 18px;
 }
-
-/* Box 1 - 'My awesome website' section, with large picture */
 
 .box1 {
   background: #1f2937;
@@ -113,11 +100,6 @@ button {
   padding-left: 50px;
 }
 
-a {
-  text-decoration: none;
-  color: gray;
-}
-
 /* Box 2 */
 
 .box2-header {
@@ -130,30 +112,7 @@ a {
   justify-content: center;
 }
 
-.box3 {
-  background: #e5e7eb;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.quote {
-  padding-top: 40px;
-  font-size: 36px;
-  font-weight: lighter;
-  color: #1f2937;
-  max-width: 1000px;
-  padding-bottom: 40px;
-  padding-left: 40px;
-}
-
-.author {
-  padding-bottom: 40px;
-}
-
 .pics {
-  /* they're not really wrapping */
-  /* need to figure out to center pictures according to the text */
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -175,10 +134,34 @@ a {
   max-width: 150px;
 }
 
+/* Box 3 */
+
+.box3 {
+  background: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quote {
+  padding-top: 40px;
+  font-size: 36px;
+  color: #1f2937;
+  max-width: 1000px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+}
+
+.author {
+  padding-bottom: 40px;
+}
+
+/* Box 4 */
+
 .box4 {
   background: white;
   display: flex;
-  width: 900px;
+  width: 800px;
   height: 300px;
 }
 
