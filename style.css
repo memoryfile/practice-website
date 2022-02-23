@@ -12,7 +12,7 @@ body {
 a {
   text-decoration: none;
   color: white;
-  margin: 8px;
+  margin: 6px;
 }
 
 button {
@@ -158,27 +158,30 @@ button {
 
 /* Box 4 */
 
+.box4,
+.box4-container1,
+.box4-container2,
+.box4-container3 {
+  display: flex;
+}
+
 .box4 {
   background: white;
-  display: flex;
-  width: 800px;
   height: 300px;
 }
 
-.realbox4 {
+.box4-container2 {
   width: 800px;
   height: 150px;
   background: #3882f6;
   margin: auto;
   border-radius: 0.5em;
-  display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.box4-container {
+.box4-container3 {
   color: #e5e7eb;
-  display: flex;
   flex-direction: column;
   align-items: center;
 }
